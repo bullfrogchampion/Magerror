@@ -1,0 +1,16 @@
+{
+    "name": "champion/magerror",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "description": "Improved magento error reporting for development",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*",
+        "joseph-lenton/php-error": "*"
+    },
+    "authors": [
+        {
+            "name":"Jeremy Champion",
+            "email":"bullfrogchampion@gmail.com"
+        }
+    ]
+}
