@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Champion_Magerror>
+            <version>1.0.0</version>
+        </Champion_Magerror>
+    </modules>
+    <global>
+        <models>
+            <magerror>
+                <class>Champion_Magerror_Model</class>
+            </magerror>
+        </models>
+        <helpers>
+            <magerror>
+                <class>Champion_Magerror_Helper</class>
+            </magerror>
+        </helpers>
+        <events>
+            <controller_front_init_before>
+                <observers>
+                    <controller_front_init_before>
+                        <class>Champion_Magerror_Model_Observer</class>
+                        <method>registerPhpError</method>
+                    </controller_front_init_before>
+                </observers>
+            </controller_front_init_before>
+        </events>
+    </global>
+    <default>
+        <dev>
+            <magerror>
+                <enabled>1</enabled>
+            </magerror>
+        </dev>
+    </default>
+</config>
